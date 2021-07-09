@@ -6,7 +6,7 @@ import {
   ReferenceInput,
 } from 'react-admin';
 
-const CharactersPost = (props) => {
+const ColorsPost = (props) => {
   return (
     <Create title="Create" {...props}>
       <SimpleForm>
@@ -43,4 +43,4 @@ const CharactersPost = (props) => {
   );
 };
 
-export default CharactersPost;
+export default ColorsPost;
