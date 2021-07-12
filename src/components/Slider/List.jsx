@@ -4,7 +4,6 @@ import {
   TextField,
   EditButton,
   DeleteButton,
-  ImageField,
 } from 'react-admin';
 
 const SliderList = (props) => {
@@ -12,7 +11,7 @@ const SliderList = (props) => {
     <List {...props}>
       <Datagrid>
         <TextField source="title" />
-        <ImageField source="imgSrc" />
+        <TextField source="imgSrc" />
         <TextField source="imgAlt" />
         <TextField source="subtext" />
         <EditButton basePath="/slider" />
