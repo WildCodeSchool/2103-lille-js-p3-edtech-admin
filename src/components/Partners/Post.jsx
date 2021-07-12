@@ -6,7 +6,7 @@ import {
   ReferenceInput,
 } from 'react-admin';
 
-const ColorsPost = (props) => {
+const PartnersPost = (props) => {
   return (
     <Create title="Create" {...props}>
       <SimpleForm>
@@ -43,4 +43,4 @@ const ColorsPost = (props) => {
   );
 };
 
-export default ColorsPost;
+export default PartnersPost;
