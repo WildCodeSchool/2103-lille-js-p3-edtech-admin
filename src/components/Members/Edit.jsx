@@ -1,10 +1,10 @@
-import { Edit, SimpleForm, TextField, TextInput } from 'react-admin';
+import { Edit, SimpleForm, TextInput } from 'react-admin';
 
 const MembersEdit = (props) => {
   return (
     <Edit title="Edition" {...props}>
       <SimpleForm>
-        <TextField source="id" />
+        <TextInput source="name" />
         <TextInput source="logoSrc" />
         <TextInput source="logoAlt" />
         <TextInput source="link" />
