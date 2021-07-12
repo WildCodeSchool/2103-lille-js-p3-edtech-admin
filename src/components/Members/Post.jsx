@@ -1,17 +1,15 @@
 import {
-  Edit,
+  Create,
   SimpleForm,
-  TextField,
   TextInput,
   SelectInput,
   ReferenceInput,
 } from 'react-admin';
 
-const CharactersEdit = (props) => {
+const MembersPost = (props) => {
   return (
-    <Edit title="Edition" {...props}>
+    <Create title="Create" {...props}>
       <SimpleForm>
-        <TextField source="id" />
         <TextInput source="name" />
         <SelectInput
           source="tier"
@@ -30,21 +28,19 @@ const CharactersEdit = (props) => {
           label="Base Form"
           source="id_base"
           reference="characters"
-          allowEmpty
         >
-          <SelectInput optionText="name" />
+          <SelectInput optionText="name" optionValue="id" allowEmpty />
         </ReferenceInput>
         <ReferenceInput
           label="Lambda Form"
           source="id_lambda"
           reference="characters"
-          allowEmpty
         >
-          <SelectInput optionText="name" />
+          <SelectInput optionText="name" optionValue="id" />
         </ReferenceInput>
       </SimpleForm>
-    </Edit>
+    </Create>
   );
 };
 
-export default CharactersEdit;
+export default MembersPost;
