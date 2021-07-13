@@ -18,6 +18,9 @@ import UsersPost from './components/Users/Post';
 import SliderList from './components/Slider/List';
 import SliderEdit from './components/Slider/Edit';
 import SliderPost from './components/Slider/Post';
+import ActusEdit from './components/Actus/Edit';
+import ActusList from './components/Actus/List';
+import ActusPost from './components/Actus/Post';
 
 function App() {
   return (
@@ -37,6 +40,12 @@ function App() {
           list={PartnersList}
           edit={PartnersEdit}
           create={PartnersPost}
+        />
+        <Resource
+          name="actus"
+          edit={ActusEdit}
+          list={ActusList}
+          create={ActusPost}
         />
         <Resource
           name="slider"
