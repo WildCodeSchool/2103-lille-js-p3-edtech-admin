@@ -15,6 +15,9 @@ import ImagesList from './components/Images/List';
 import ImagesEdit from './components/Images/Edit';
 import UsersList from './components/Users/List';
 import UsersPost from './components/Users/Post';
+import SliderList from './components/Slider/List';
+import SliderEdit from './components/Slider/Edit';
+import SliderPost from './components/Slider/Post';
 
 function App() {
   return (
@@ -34,6 +37,12 @@ function App() {
           list={PartnersList}
           edit={PartnersEdit}
           create={PartnersPost}
+        />
+        <Resource
+          name="slider"
+          list={SliderList}
+          edit={SliderEdit}
+          create={SliderPost}
         />
         <Resource name="auth/signup" list={UsersList} create={UsersPost} />
       </Admin>
