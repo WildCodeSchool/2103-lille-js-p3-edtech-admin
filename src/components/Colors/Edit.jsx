@@ -1,4 +1,5 @@
-import { Edit, SimpleForm, TextField, TextInput } from 'react-admin';
+import { Edit, SimpleForm, TextField } from 'react-admin';
+import { ColorInput } from 'react-admin-color-input';
 
 const ColorsEdit = (props) => {
   return (
@@ -6,7 +7,7 @@ const ColorsEdit = (props) => {
       <SimpleForm>
         <TextField source="id" />
         <TextField source="tagname" />
-        <TextInput source="color" />
+        <ColorInput source="color" />
       </SimpleForm>
     </Edit>
   );

@@ -18,6 +18,10 @@ import UsersPost from './components/Users/Post';
 import SliderList from './components/Slider/List';
 import SliderEdit from './components/Slider/Edit';
 import SliderPost from './components/Slider/Post';
+import SectionsList from './components/Sections/List';
+import SectionsEdit from './components/Sections/Edit';
+import SettingsCarouselList from './components/SettingsCarousel/List';
+import SettingsCarouselEdit from './components/SettingsCarousel/Edit';
 
 function App() {
   return (
@@ -43,6 +47,12 @@ function App() {
           list={SliderList}
           edit={SliderEdit}
           create={SliderPost}
+        />
+        <Resource name="sections" list={SectionsList} edit={SectionsEdit} />
+        <Resource
+          name="settings_carousel/admin"
+          list={SettingsCarouselList}
+          edit={SettingsCarouselEdit}
         />
         <Resource name="auth/signup" list={UsersList} create={UsersPost} />
       </Admin>
