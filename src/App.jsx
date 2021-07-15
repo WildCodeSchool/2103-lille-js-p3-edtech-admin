@@ -22,6 +22,11 @@ import SectionsList from './components/Sections/List';
 import SectionsEdit from './components/Sections/Edit';
 import SettingsCarouselList from './components/SettingsCarousel/List';
 import SettingsCarouselEdit from './components/SettingsCarousel/Edit';
+import ActusEdit from './components/Actus/Edit';
+import ActusList from './components/Actus/List';
+import ActusPost from './components/Actus/Post';
+import ExternalLinksList from './components/ExternalLinks.jsx/List';
+import ExternalLinksEdit from './components/ExternalLinks.jsx/Edit';
 
 function App() {
   return (
@@ -41,6 +46,17 @@ function App() {
           list={PartnersList}
           edit={PartnersEdit}
           create={PartnersPost}
+        />
+        <Resource
+          name="actus"
+          edit={ActusEdit}
+          list={ActusList}
+          create={ActusPost}
+        />
+        <Resource
+          name="external_Links/admin"
+          list={ExternalLinksList}
+          edit={ExternalLinksEdit}
         />
         <Resource
           name="slider"
