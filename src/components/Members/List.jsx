@@ -4,6 +4,7 @@ import {
   TextField,
   EditButton,
   DeleteButton,
+  UrlField,
 } from 'react-admin';
 
 const MembersList = (props) => {
@@ -13,7 +14,7 @@ const MembersList = (props) => {
         <TextField source="name" />
         <TextField source="logoSrc" />
         <TextField source="logoAlt" />
-        <TextField source="link" />
+        <UrlField source="link" />
         <EditButton basePath="/members" />
         <DeleteButton basePath="/members" />
       </Datagrid>

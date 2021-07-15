@@ -1,11 +1,12 @@
 import { List, Datagrid, TextField, EditButton } from 'react-admin';
+import { ColorField } from 'react-admin-color-input';
 
 const ColorsList = (props) => {
   return (
     <List {...props}>
       <Datagrid>
         <TextField source="tagname" />
-        <TextField source="color" />
+        <ColorField source="color" />
         <EditButton basePath="/colors/admin" />
       </Datagrid>
     </List>
